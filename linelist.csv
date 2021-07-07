@@ -1,0 +1,10 @@
+"","day","id","biter_id","date_bitten","num_bitee","incubation","latent","infectious","biter_infectious_wait"
+"1",1,1,NA,NA,3,10,14,6,NA
+"2",17,2,1,17,1,8,5,4,2
+"3",20,3,1,20,2,4,10,5,5
+"4",21,4,1,21,2,12,3,7,6
+"5",25,5,2,25,NA,NA,NA,NA,3
+"6",34,6,3,34,NA,NA,NA,NA,4
+"7",34,7,3,34,NA,NA,NA,NA,4
+"8",31,8,4,31,NA,NA,NA,NA,7
+"9",25,9,4,25,NA,NA,NA,NA,1
