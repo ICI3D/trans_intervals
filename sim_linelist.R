@@ -4,7 +4,7 @@ source("linelist_fun.R")
 
 set.seed(104)
 
-R <- 2
+R0 <- 2
 initial_dates <- 1:1
 daily_unknown_links <- rpois(length(initial_dates),lambda=2)
 
@@ -37,6 +37,6 @@ print(expand_biters)
 
 
 
-linelist <- linelist_generator(expand_biters,numGens=2, R0=2, mean_inc=8, mean_latent=8, mean_infectious=5)
+linelist <- linelist_generator(expand_biters,numGens=1, R0=2, mean_inc=8, mean_latent=8, mean_infectious=5)
 
 print(linelist, n=Inf)

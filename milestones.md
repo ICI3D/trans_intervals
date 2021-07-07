@@ -20,11 +20,13 @@
 - Think about how to summarise the linelist
 
 ### Task 
+- play around with the linelist with different parameters 
+- think about how to turn the generated linelist into a time series 
 - transform linelist to ts
 - what are the different interval distributions?
 - What happens when you have incomplete data (i.e. remove cells, rows, columns)
 - What do people do when data are imperfect? 
 
 ## Day 4
-- Add correlation
+think about what to present on friday
 
