@@ -37,6 +37,20 @@ print(expand_biters)
 
 
 
-linelist <- linelist_generator(expand_biters,numGens=1, R0=2, mean_inc=8, mean_latent=8, mean_infectious=5)
+linelist <- linelist_generator(expand_biters,numGens=3, R0=2, mean_inc=8, mean_latent=8, mean_infectious=5)
+
 
 print(linelist, n=Inf)
+
+tsdata <-(linelist
+          %>% group_by(day)
+          %>%summarise(count=n()))
+print(tsdata)
+
+library(tidyverse)
+
+ggplot(data = tsdata, aes(x = day, y = count), color=red) +
+  geom_point(alpha = 0.7, color = "red")+
+  labs(title = "Time series of number of dogs infected per day",
+       x = "Dog bitten/Day",
+       y = "Cases") 
